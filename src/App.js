@@ -1,14 +1,14 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Film from './Components/Film';
 import Basket from './Components/Basket';
+import Film from './Components/Film';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Film />} />
+        <Route path="/" element={<Home />} />
         <Route path="/basket" element={<Basket />} />
+        <Route path="/film" element={<Film />} />
       </Routes>
     </Router>
   );
